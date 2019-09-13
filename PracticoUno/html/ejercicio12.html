@@ -1,0 +1,89 @@
+<!-- PRIMER ejercicio -->
+    <div id="ejercicio1" class="row no-gutters d-flex justify-content-center">
+        <!-- titulo/descripcion -->
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2>Ejercicio 1</h2>
+            <p class="lead mb-0">Repaso Javascript: Definir una matriz de 100 elementos x 100 elementos y completarla con valores
+                enteros random, y resuelva los siguientes incisos:
+                <ol>
+                  <li>Escribir una función que retorne el valor máximo de toda la matriz</li>
+                  <li>Escribir una función que retorne el valor máximo contenido en las filas pares y el valor mínimo en
+                      las filas impares</li>
+                  <li>Calcular el valor promedio de cada fila y guardarlos en un arreglo.</li>
+                </ol>
+            </p>
+          </div>
+          <!-- foto del ejercicio -->
+          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/matriz.jpg');"></div>
+          <div class="col-12 order-3">
+            <!-- acordeon VER MAS  -->
+              <div id="accordion">
+                  <div class="card">
+                    <div class="card-header d-flex justify-content-center" id="headingOne">
+                    <h5 class="mb-0">  <!-- boton ver mas --><button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="tabla">Ver mas</button></h5>
+                    </div>
+                    <div id="collapseOne" class="collapse collapsed" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-12 col-lg-5 d-flex justify-content-around">
+                            <button type="button" class="btn btn-dark" id="puntoA">Punto A</button>
+                            <button type="button" class="btn btn-dark" id="puntoB">Punto B</button>
+                            <button type="button" class="btn btn-dark" id="puntoC">Punto C</button>
+                            <button type="button" class="btn btn-danger" id="recargar">Recargar Matriz</button>
+                          </div>
+                          
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <table class="table table-striped">
+                              <tbody id="tCuerpo">
+                              </tbody>
+                          </table>
+                          </div>
+                          <div class="col-12 col-lg-6">
+                            <h3 class="table">
+                              Resultado:
+                            </h3>
+                            <div id="resultado"></div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- SEGUNDO ejercicio -->
+      <div class="row no-gutters d-flex justify-content-center" id="ejercicio2">
+        <div class="col-lg-6 order-lg-2 my-auto showcase-text">
+          <h2>Ejercicio 2</h2>
+          <p class="lead mb-0">Pintar una región rectangular de un color utilizando el Contexto de HTML5.</p>
+        </div>
+        <!-- IMAGEN -->
+        <div class="col-lg-6 order-1 order-lg-1 text-white showcase-img " style="background-image: url('img/canvas.jpg');"></div>
+        <div class="col-12 order-3">
+          <!-- acordeon VER MAS  -->
+            <div id="accordion">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-center" id="headingTree">
+                  <h5 class="mb-0">  <!-- boton ver mas --><button id="ejercicio2" class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Ver mas</button></h5>
+                  </div>
+                  <div id="collapseThree" class="collapse collapsed" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="row d-flex justify-content-center">
+                            <p>Seleccione un color para pintar en el canvas</p>
+                        <div class="col-12 d-flex justify-content-center">
+                            <button type="button" class="btn btn-danger" id="rojo">Rojo</button>
+                            <button type="button" class="btn btn-primary" id="azul">Azul</button>
+                            <button type="button" class="btn btn-warning" id="amarillo">Amarillo</button>
+                        </div>
+                        <canvas id="canvas"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>

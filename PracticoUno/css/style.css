@@ -1,0 +1,14 @@
+.btn{
+   margin-top: 4%;
+}
+.table{
+   margin-top: 10%;
+}
+canvas{
+   height: 100%;
+   width: 100%;
+   border: 1px solid black;
+   margin: 0.5% 0 0 0;
+}
+
+
