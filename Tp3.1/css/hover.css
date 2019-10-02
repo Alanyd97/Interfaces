@@ -1,0 +1,41 @@
+div{
+    display: flex;
+}
+.orden0{
+    height: 100px;
+    width: 100px;
+    border: solid 2px black;
+    order: 2;
+}
+.orden1{
+    height: 100px;
+    width: 100px;
+    border: solid 2px black;
+    order: 1;
+}
+.orden1:hover{
+    order: 2;
+    background-color: blue;
+}
+.orden0:hover{
+    order: 1;
+    background-color: aqua;
+}
+.hover, .hoverSombra{
+    margin: 0 20px 20px 20px;
+    height: 100px;
+    width: 100px;
+    border: solid 2px black;
+}
+.hover:hover{
+    height: 350px;
+}
+
+.hoverSombra{
+    border-radius: 10%;
+    box-shadow: 5px 5px 25px #222;
+}
+.hoverSombra:hover{
+    box-shadow: 1px 1px 5px #111;
+    border: solid 3px green;
+}

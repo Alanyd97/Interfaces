@@ -1,0 +1,117 @@
+    
+#zombie{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 80;
+}
+.zombie{
+    background: url("../images/spritesheet.png");
+    height: 220px;
+    width: 150px;
+}
+.movimiento{
+    animation: play 1s steps(10) infinite;
+}
+
+.subir{
+    transform: translate(150px, -10px);
+}
+.posicion{
+    transform: translate(150px, 150px);
+}
+.muere{
+    height: 190px;
+    width: 261px;
+    background: url("../images/muere.png");
+    animation: muere 1.8s steps(10) infinite;
+    transform: translate(150px, 180px);
+}
+#gameover{
+    background: url("../images/gameover1.png") no-repeat;
+    height: 465px;
+    width: 650px;
+    z-index: 100;
+    transform: translate(200px, 0px);
+}
+.objeto{
+    position: absolute;
+    background-image: url("../images/cactus.png");
+    height: 90px;
+    width: 69px;
+    animation: cactus 3.6s infinite;
+    animation-timing-function: linear;
+    z-index: 70;
+}
+.cielo, .sierras, .pasto{
+    position: absolute;
+    height: 450px;
+    width: 1369px;
+}
+.cielo{
+    background-image: url("../images/cielo.png");
+}
+.sierras{
+    background-image: url("../images/sierrassl.png");
+}
+.pasto{
+    background-image: url("../images/fondo.png");
+}
+.animacionPasto{
+    animation: pasto 17s infinite;
+    animation-timing-function: linear;
+    z-index: 58;
+}
+.animacionSierras{
+    animation: sierras 100s infinite;
+    animation-timing-function: linear;
+    z-index: 20;
+}
+.animacionCielo{
+    animation: cielo 60s infinite;
+    animation-timing-function: linear;
+    z-index: 2;
+}
+@keyframes muere{
+    from {background-position: 0 0;} to
+    {background-position: -2617px 0;}
+}
+@keyframes play{
+    from {background-position: 0 0;} to
+    {background-position: -1793px 0;}
+}
+@keyframes pasto{
+    from {background-position: 0 0;} to
+    {background-position: -6082px 0;}
+}
+@keyframes sierras{
+    from {background-position: 0 0;} to
+    {background-position: -14420px 0;}
+}
+@keyframes cielo{
+    from {background-position: 0 0;} to
+    {background-position: -1324px 0;}
+}
+@keyframes cactus{
+    from {transform: translate(1300px, 270px)} 
+    to{transform: translate(0, 270px)}
+}
+#vidas{
+    height: 80px;
+    width: 200px;
+    z-index: 10;
+    transform: translate(1150px, 0);
+}
+#vida, #vida1, #vida2{
+    background-image: url("../images/vida.png");
+    height: 37px;
+    width: 48px;
+    z-index: 90;
+}
+
+
+
+
+
+
+

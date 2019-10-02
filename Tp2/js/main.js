@@ -98,6 +98,7 @@ canvas.addEventListener("mouseup", function(){
 canvas.addEventListener("dblclick", function(){
     var x = event.layerX;
     var y = event.layerY;
+    if (figActual){
         for (let i = 0; i < figuras.length; i++) {
             clickRojo = figuras[i].clickRojo(x, y);
             if (clickRojo>=0){
@@ -115,17 +116,12 @@ canvas.addEventListener("dblclick", function(){
         clean();
         figuras.push(figActual);
         actualizar();
+    }
         
 
 });
 document.addEventListener("keydown", function(){
-    const piso = 0;
-    const techo = 255;
     if (event.code == 'KeyC'){
-        let red = 255;
-        let green = 255;
-        let blue = 255;
-        
         canvas.addEventListener("wheel", function () { 
             event.preventDefault();
             for (let i = 0; i < figuras.length; i++) {
@@ -133,9 +129,11 @@ document.addEventListener("keydown", function(){
                 clean(); 
                 actualizar();
             }
-        })
-
-    }   
+        });
+    }else{
+      
+                
+    }
 });
 
 document.getElementById("clean").addEventListener("click", function(){
@@ -145,9 +143,8 @@ document.getElementById("clean").addEventListener("click", function(){
     figActual = null;
     newFigura = true;
     alert("Se limpio correctamente");
+});
 
-
-})
 
 
 

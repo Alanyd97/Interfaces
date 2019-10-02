@@ -95,6 +95,7 @@ import {Circulo} from "./Circulo.js";
                     this.cerrar(0, i);
         }
     }
+
     clickRojo(x, y){
         for (let i = 0; i < this.arrCirculos.length-1; i++) {
             if (this.arrCirculos[i].soyClick(x, y)) {

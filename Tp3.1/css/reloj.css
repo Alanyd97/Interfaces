@@ -1,0 +1,45 @@
+div.caja{
+    margin: 20px;
+    display: flex;
+    justify-content: center;    
+}
+
+.reloj{
+    display: flex;
+    justify-content: center;  
+    background-image: url("../images/reloj.jpg");
+    height: 500px;
+    width: 500px;
+}
+
+@keyframes rotacion{
+    100% {-webkit-transform: rotateZ(360deg);}
+}
+.minuto{
+    position: relative;
+    z-index: 1;
+    animation-name: rotacion;
+    -webkit-animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    height: 187px;
+    width: 20px;
+    border-radius: 45%;
+    display: flex;
+    align-self: center;
+    margin: 0 0 0px 10px;
+}
+.hora{
+    position: absolute; 
+    z-index: 3;
+    animation-name: rotacion;
+    -webkit-animation-iteration-count: infinite;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    height: 120px;
+    width: 10px;
+    border-radius: 45%;
+    display: flex;
+    align-self: center;
+    margin: 0 60px 0px 5px;
+}
